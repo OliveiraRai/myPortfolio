@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html, body {
+scroll-behavior: smooth;
+overflow-x: hidden; /* <--- impede scroll horizontal */
+}
+
+body {
+font-family: 'JetBrains Mono', monospace;
+background: #0d0d0d;
+color: #fff;
+line-height: 1.6;
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+letter-spacing: 0.5px;
+}

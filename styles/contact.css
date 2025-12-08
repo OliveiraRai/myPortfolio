@@ -1,0 +1,59 @@
+.contact h2 {
+  margin-bottom: 10%;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* força ficar lado a lado */
+  flex-direction: row; /* linha */
+  justify-content: center; /* centraliza os itens */
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* se a tela ficar pequena, quebra linha */
+}
+.contact-list li a {
+  display: flex;
+  flex-direction: column; /* ícone ao lado do texto */
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+  border-radius: 15px;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.contact-list li a:hover {
+  color: #fff;
+  background: rgba(5, 5, 5, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+.contact-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+} /* MOBILE */
+@media (max-width: 768px) {
+  .contact-list li a {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+  }
+  .contact-img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  color: #555;
+  margin-top: 40px; /* agora tá equilibrado */
+}

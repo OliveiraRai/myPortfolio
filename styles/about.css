@@ -1,0 +1,80 @@
+.about {
+  display: block;
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+}
+.about h2 {
+    text-align: left;
+}
+.about-container {
+  display: block;
+  background: rgba(255, 255, 255, 0.05); /* só o fundo mais claro */
+  padding: 30px 20px;
+  position: relative;
+} 
+.about-container::before {
+content: "";
+position: absolute;
+inset: 0;
+background: linear-gradient(
+135deg,
+rgba(255, 255, 255, 0.09),
+rgba(0, 0, 0, 1)
+);
+z-index: -1;
+box-shadow: 10px 10px 0 black;
+}
+/* Glow permanece atrás */
+.about-container .sobre-glow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  transform: translateX(-50%);
+  filter: blur(80px);
+  z-index: -1;
+}
+.about p.quote-text {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  border-left: 3px solid #5f5f5f20;
+  padding-left: 18px;
+  max-width: 100%;
+  margin-bottom: 20px;
+} /* GIF - desktop */
+.gif {
+  flex: 0 0 150px;
+  text-align: right; /* mantém no canto direito no desktop */
+}
+.gif img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+} /* MOBILE */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 25px 15px;
+    text-align: center;
+  }
+  .about p.quote-text {
+    border-left: 3px solid #ffffff20;
+    padding-left: 10px;
+    margin: 0 auto 15px auto;
+    text-align: left;
+  }
+  .gif {
+    text-align: center; /* centraliza no mobile */
+  }
+}
+
+.blue-highlight {
+    color: rgb(95, 196, 255);
+}
+
+.green-highlight {
+    color: rgb(56, 255, 56);
+}

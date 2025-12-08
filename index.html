@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/technologies.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo">Hello world.</a>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul id="nav-links">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#technologies">Tecnologias</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO TRIANGULAR -->
+      <section class="hero-section">
+        <div class="hero-bg-oval"></div>
+
+        <div class="hero-photo">
+          <img src="assets/img/8-bit-portrait.png" alt="Foto"/>
+        </div>
+
+        <div class="hero-headline">
+          <h1>Raí Oliveira,<br />Desenvolvedor Full-Stack</h1>
+        </div>
+
+        <div class="hero-description">
+          <p>
+            Olá 👋. Sou o Raí, desenvolvedor Full-Stack de São Paulo. Curto criar
+            sistemas limpos, estáveis e diretos ao ponto!
+          </p>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+      <section id="about" class="section about">
+        <div class="about-container">
+          <h2>Sobre mim</h2>
+
+          <div class="sobre-content">
+            <p class="quote-text">
+              Me chamo Raí Oliveira, um programador que encontrou na TI um
+              caminho natural para
+              <span class="blue-highlight">transformar lógica</span> em algo
+              <span class="green-highlight">útil</span>. <br /><br />
+              Venho de São Paulo e carrego comigo a disciplina de quem aprendeu
+              a evoluir resolvendo um problema por vez, sem atalhos. Gosto de
+              estruturar processos, entender
+              <span class="blue-highlight">como as coisas funcionam</span> por
+              trás e criar
+              <span class="green-highlight"
+                >soluções que realmente façam diferença</span
+              >. <br /><br />
+              Meu foco é crescer tecnicamente,
+              <span class="blue-highlight">ampliar minha visão</span> sobre
+              tecnologia e me manter em
+              <span class="green-highlight">constante construção</span> — como
+              profissional e como pessoa.
+            </p>
+          </div>
+
+          <div class="gif">
+            <img src="assets/img/kirby-dancing.gif" alt="kirby-dancing" />
+          </div>
+        </div>
+
+        <div class="sobre-glow"></div>
+      </section>
+
+      <!-- TECNOLOGIAS -->
+       <section id="technologies" class="tech-section">
+        <h2>Tecnologias</h2>
+        <div class="tech-carousel-wrapper">
+            <button class="carousel-btn left">
+            <!-- seta esquerda SVG -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"/>
+            </svg>
+            </button>
+
+            <div class="tech-carousel">
+            <div class="tech-card">
+                <img src="assets/icons/html-icon.png" class="tech-icon" alt="HTML">
+                <span>HTML</span>
+            </div>
+            <div class="tech-card">
+                <img src="assets/icons/css-icon.png" class="tech-icon" alt="CSS">
+                <span>CSS</span>
+            </div>
+            <div class="tech-card">
+                <img src="assets/icons/javascript-icon.png" class="tech-icon" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="tech-card">
+                <img src="assets/icons/java-icon.png" class="tech-icon" alt="Java">
+                <span>Java</span>
+            </div>  
+            <!-- continua adicionando cards -->
+            </div>
+
+            <button class="carousel-btn right">
+            <!-- seta direita SVG -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+            </svg>
+            </button>
+        </div>
+        </section>
+
+      <!-- PROJETOS -->
+      <section id="projects" class="section projects-section">
+        <h2>Projetos</h2>
+        <div class="projects-container" id="projects-container">
+            <!-- Os projetos serão gerados aqui via JS -->
+        </div>
+        </section>
+
+
+      <!-- CONTATO -->
+      <section id="contact" class="section contact">
+        <div class="contact-container">
+            <h2>Contato</h2>
+            <ul class="contact-list">
+            <li>
+                <a href="https://github.com/OliveiraRai" target="_blank">
+                <img src="assets/icons/github-icon.png" alt="GitHub" class="contact-img">
+                GitHub
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com/in/rai-oliveira" target="_blank">
+                <img src="assets/icons/linkedin-icon.png" alt="LinkedIn" class="contact-img">
+                LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="mailto:rai.conslog@hotmail.com">
+                <img src="assets/icons/email-icon.png" alt="Email" class="contact-img">
+                Email
+                </a>
+            </li>
+            </ul>
+        </div>
+        </section>
+
+
+    <footer>
+      <p>© 2025 Oliveira</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/load-projects.js"></script>
+  </body>
+</html>

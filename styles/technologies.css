@@ -1,0 +1,111 @@
+.tech-section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.tech-section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* wrapper para os botões e carrossel */
+.tech-carousel-wrapper {
+  position: relative; /* essencial para os botões ficarem sobre o carrossel */
+}
+
+.tech-carousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 30px 10px;
+  gap: 20px;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tech-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.tech-card {
+  flex: 0 0 auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  scroll-snap-align: start;
+  transition: 0.3s;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  background: rgba(14, 14, 14, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tech-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* Botões do carrossel */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.3s;
+  background-color: transparent;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(189, 189, 189, 0.1);
+}
+
+.carousel-btn svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: none;
+}
+
+.carousel-btn.left { left: 5px; }
+.carousel-btn.right { right: 5px; }
+
+@media (max-width: 768px) {
+  .tech-card {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tech-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .carousel-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .carousel-btn svg {
+    width: 12px;
+    height: 12px;
+  }
+}
